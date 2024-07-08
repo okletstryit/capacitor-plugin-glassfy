@@ -1,7 +1,6 @@
 src/*.js
 
 # node files
-dist
 node_modules
 
 # iOS files
