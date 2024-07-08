@@ -1,0 +1,1511 @@
+{
+  "api": {
+    "name": "GlassfyPlugin",
+    "slug": "glassfyplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "sdkVersion",
+        "signature": "() => Promise<GlassfyVersion>",
+        "parameters": [],
+        "returns": "Promise<GlassfyVersion>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "GlassfyVersion"
+        ],
+        "slug": "sdkversion"
+      },
+      {
+        "name": "initialize",
+        "signature": "(options: { apiKey: string; watcherMode: boolean; }) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ apiKey: string; watcherMode: boolean; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "For more details, follow instruction at https://docs.glassfy.io/get-started/configuration",
+        "complexTypes": [],
+        "slug": "initialize"
+      },
+      {
+        "name": "setLogLevel",
+        "signature": "(options: { logLevel: GLASSFY_LOGLEVEL; }) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ logLevel: GLASSFY_LOGLEVEL; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "GLASSFY_LOGLEVEL"
+        ],
+        "slug": "setloglevel"
+      },
+      {
+        "name": "offerings",
+        "signature": "() => Promise<GlassfyOfferings>",
+        "parameters": [],
+        "returns": "Promise<GlassfyOfferings>",
+        "tags": [],
+        "docs": "For more details, check the documentation https://docs.glassfy.io/dashboard/configure-offerings",
+        "complexTypes": [
+          "GlassfyOfferings"
+        ],
+        "slug": "offerings"
+      },
+      {
+        "name": "purchaseHistory",
+        "signature": "() => Promise<GlassfyPurchasesHistory>",
+        "parameters": [],
+        "returns": "Promise<GlassfyPurchasesHistory>",
+        "tags": [],
+        "docs": "For more details, check the documentation https://docs.glassfy.io/dashboard/configure-offerings",
+        "complexTypes": [
+          "GlassfyPurchasesHistory"
+        ],
+        "slug": "purchasehistory"
+      },
+      {
+        "name": "permissions",
+        "signature": "() => Promise<GlassfyPermissions>",
+        "parameters": [],
+        "returns": "Promise<GlassfyPermissions>",
+        "tags": [],
+        "docs": "For more details, check the documentation https://docs.glassfy.io/dashboard/configure-permissions.html",
+        "complexTypes": [
+          "GlassfyPermissions"
+        ],
+        "slug": "permissions"
+      },
+      {
+        "name": "skuWithId",
+        "signature": "(options: { identifier: string; }) => Promise<GlassfySku>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ identifier: string; }"
+          }
+        ],
+        "returns": "Promise<GlassfySku>",
+        "tags": [],
+        "docs": "For more details, check the documentation https://docs.glassfy.io/dashboard/configure-products",
+        "complexTypes": [
+          "GlassfySku"
+        ],
+        "slug": "skuwithid"
+      },
+      {
+        "name": "skuWithIdAndStore",
+        "signature": "(options: { identifier: string; store: GLASSFY_STORE; }) => Promise<GlassfySkuBase>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ identifier: string; store: GLASSFY_STORE; }"
+          }
+        ],
+        "returns": "Promise<GlassfySkuBase>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "GlassfySkuBase",
+          "GLASSFY_STORE"
+        ],
+        "slug": "skuwithidandstore"
+      },
+      {
+        "name": "connectCustomSubscriber",
+        "signature": "(options: { subscriberId: string; }) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ subscriberId: string; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "connectcustomsubscriber"
+      },
+      {
+        "name": "connectPaddleLicenseKey",
+        "signature": "(options: { licenseKey: string; force: boolean; }) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ licenseKey: string; force: boolean; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "connectpaddlelicensekey"
+      },
+      {
+        "name": "connectGlassfyUniversalCode",
+        "signature": "(options: { universalCode: string; force: boolean; }) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ universalCode: string; force: boolean; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "connectglassfyuniversalcode"
+      },
+      {
+        "name": "setEmailUserProperty",
+        "signature": "(options: { email: string; }) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ email: string; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "setemailuserproperty"
+      },
+      {
+        "name": "setDeviceToken",
+        "signature": "(options: { token: string; }) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ token: string; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "setdevicetoken"
+      },
+      {
+        "name": "setExtraUserProperty",
+        "signature": "(options: { extra: GlassfyExtraProperty; }) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ extra: GlassfyExtraProperty; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "GlassfyExtraProperty"
+        ],
+        "slug": "setextrauserproperty"
+      },
+      {
+        "name": "getUserProperty",
+        "signature": "() => Promise<GlassfyUserProperties>",
+        "parameters": [],
+        "returns": "Promise<GlassfyUserProperties>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "GlassfyUserProperties"
+        ],
+        "slug": "getuserproperty"
+      },
+      {
+        "name": "purchaseSku",
+        "signature": "(options: { sku: GlassfySku; skuToUpgrade?: GlassfySku; replacementMode?: GLASSFY_REPLACEMENT_MODE; }) => Promise<GlassfyTransaction>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ sku: GlassfySku; skuToUpgrade?: GlassfySku | undefined; replacementMode?: GLASSFY_REPLACEMENT_MODE | undefined; }"
+          }
+        ],
+        "returns": "Promise<GlassfyTransaction>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "GlassfyTransaction",
+          "GlassfySku",
+          "GLASSFY_REPLACEMENT_MODE"
+        ],
+        "slug": "purchasesku"
+      },
+      {
+        "name": "restorePurchases",
+        "signature": "() => Promise<GlassfyPermissions>",
+        "parameters": [],
+        "returns": "Promise<GlassfyPermissions>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "GlassfyPermissions"
+        ],
+        "slug": "restorepurchases"
+      },
+      {
+        "name": "storeInfo",
+        "signature": "() => Promise<GlassfyStoresInfo>",
+        "parameters": [],
+        "returns": "Promise<GlassfyStoresInfo>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "GlassfyStoresInfo"
+        ],
+        "slug": "storeinfo"
+      },
+      {
+        "name": "setAttribution",
+        "signature": "(options: { type: GLASSFY_ATTRIBUTION; value: string; }) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ type: GLASSFY_ATTRIBUTION; value: string; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "GLASSFY_ATTRIBUTION"
+        ],
+        "slug": "setattribution"
+      },
+      {
+        "name": "setAttributions",
+        "signature": "(options: { items: GlassfyAttributionItem[]; }) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ items: GlassfyAttributionItem[]; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "GlassfyAttributionItem"
+        ],
+        "slug": "setattributions"
+      },
+      {
+        "name": "_paywall",
+        "signature": "(options: { remoteConfig: string; awaitLoading: boolean; }) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ remoteConfig: string; awaitLoading: boolean; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "_paywall"
+      },
+      {
+        "name": "_closePaywall",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "_closepaywall"
+      },
+      {
+        "name": "_openUrl",
+        "signature": "(options: { url: string; }) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ url: string; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "_openurl"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [
+    {
+      "name": "GlassfyVersion",
+      "slug": "glassfyversion",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "version",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "GlassfyOfferings",
+      "slug": "glassfyofferings",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "all",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "GlassfyOffering"
+          ],
+          "type": "GlassfyOffering[]"
+        }
+      ]
+    },
+    {
+      "name": "GlassfyOffering",
+      "slug": "glassfyoffering",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "offeringId",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "skus",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "GlassfySku"
+          ],
+          "type": "GlassfySku[]"
+        }
+      ]
+    },
+    {
+      "name": "GlassfySku",
+      "slug": "glassfysku",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "introductoryEligibility",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "GLASSFY_ELEGIBILITY"
+          ],
+          "type": "GLASSFY_ELEGIBILITY"
+        },
+        {
+          "name": "promotionalEligibility",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "GLASSFY_ELEGIBILITY"
+          ],
+          "type": "GLASSFY_ELEGIBILITY"
+        },
+        {
+          "name": "extravars",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "{ [key: string]: string; }"
+        },
+        {
+          "name": "product",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "GlassfyProduct"
+          ],
+          "type": "GlassfyProduct"
+        },
+        {
+          "name": "basePlanId",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "offerId",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "discount",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "GlassfyProductDiscount"
+          ],
+          "type": "GlassfyProductDiscount"
+        }
+      ]
+    },
+    {
+      "name": "GlassfyProduct",
+      "slug": "glassfyproduct",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "title",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "identifier",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "description",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "price",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number"
+        },
+        {
+          "name": "currencyCode",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "period",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "introductoryPrice",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "GlassfyProductDiscount"
+          ],
+          "type": "GlassfyProductDiscount"
+        },
+        {
+          "name": "discounts",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "GlassfyProductDiscount"
+          ],
+          "type": "GlassfyProductDiscount[]"
+        },
+        {
+          "name": "basePlanId",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "GlassfyProductDiscount",
+      "slug": "glassfyproductdiscount",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "identifier",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "price",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number"
+        },
+        {
+          "name": "currencyCode",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "period",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "numberOfPeriods",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number"
+        },
+        {
+          "name": "type",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "GlassfyPurchasesHistory",
+      "slug": "glassfypurchaseshistory",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "all",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "GlassfyPurchaseHistory"
+          ],
+          "type": "GlassfyPurchaseHistory[]"
+        }
+      ]
+    },
+    {
+      "name": "GlassfyPurchaseHistory",
+      "slug": "glassfypurchasehistory",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "productId",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "skuId",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "type",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "GLASSFY_EVENT_TYPE"
+          ],
+          "type": "GLASSFY_EVENT_TYPE"
+        },
+        {
+          "name": "store",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "GLASSFY_STORE"
+          ],
+          "type": "GLASSFY_STORE"
+        },
+        {
+          "name": "purchaseDate",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "expireDate",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "transactionId",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "subscriberId",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "currencyCode",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "countryCode",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "isInIntroOfferPeriod",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean"
+        },
+        {
+          "name": "promotionalOfferId",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "offerCodeRefName",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "licenseCode",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "webOrderLineItemId",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "GlassfyPermissions",
+      "slug": "glassfypermissions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "installationId",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "subscriberId",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "originalApplicationVersion",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "originalApplicationDate",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "all",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "GlassfyPermission"
+          ],
+          "type": "GlassfyPermission[]"
+        }
+      ]
+    },
+    {
+      "name": "GlassfyPermission",
+      "slug": "glassfypermission",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "permissionId",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "entitlement",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "GLASSFY_ENTITLEMENT"
+          ],
+          "type": "GLASSFY_ENTITLEMENT"
+        },
+        {
+          "name": "isValid",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean"
+        },
+        {
+          "name": "expireDate",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "accountableSkus",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "GlassfyAccountableSku"
+          ],
+          "type": "GlassfyAccountableSku[]"
+        }
+      ]
+    },
+    {
+      "name": "GlassfyAccountableSku",
+      "slug": "glassfyaccountablesku",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "isInIntroOfferPeriod",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean"
+        },
+        {
+          "name": "isInTrialPeriod",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean"
+        },
+        {
+          "name": "basePlanId",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "offerId",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "GlassfySkuBase",
+      "slug": "glassfyskubase",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "skuId",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "productId",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "store",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "GLASSFY_STORE"
+          ],
+          "type": "GLASSFY_STORE"
+        }
+      ]
+    },
+    {
+      "name": "GlassfyUserProperties",
+      "slug": "glassfyuserproperties",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "email",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "token",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean"
+        },
+        {
+          "name": "extra",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "GlassfyExtraProperty"
+          ],
+          "type": "GlassfyExtraProperty"
+        }
+      ]
+    },
+    {
+      "name": "GlassfyTransaction",
+      "slug": "glassfytransaction",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "productId",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "receiptValidated",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean"
+        },
+        {
+          "name": "permissions",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "GlassfyPermissions"
+          ],
+          "type": "GlassfyPermissions"
+        }
+      ]
+    },
+    {
+      "name": "GlassfyStoresInfo",
+      "slug": "glassfystoresinfo",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "all",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "GlassfyStoreInfo",
+            "GlassfyPaddleStoreInfo"
+          ],
+          "type": "(GlassfyStoreInfo | GlassfyPaddleStoreInfo)[]"
+        }
+      ]
+    },
+    {
+      "name": "GlassfyStoreInfo",
+      "slug": "glassfystoreinfo",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "store",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "Exclude",
+            "GLASSFY_STORE"
+          ],
+          "type": "Exclude<GLASSFY_STORE, GLASSFY_STORE.Paddle>"
+        },
+        {
+          "name": "extravars",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "{ [key: string]: string; }"
+        }
+      ]
+    },
+    {
+      "name": "GlassfyPaddleStoreInfo",
+      "slug": "glassfypaddlestoreinfo",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "store",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "GLASSFY_STORE"
+          ],
+          "type": "GLASSFY_STORE.Paddle"
+        },
+        {
+          "name": "extravars",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "{ [key: string]: string; }"
+        },
+        {
+          "name": "userid",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "planId",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "subscriptionId",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "updateURL",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "cancelURL",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "GlassfyAttributionItem",
+      "slug": "glassfyattributionitem",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "type",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "GLASSFY_ATTRIBUTION"
+          ],
+          "type": "GLASSFY_ATTRIBUTION"
+        },
+        {
+          "name": "value",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "enums": [
+    {
+      "name": "GLASSFY_LOGLEVEL",
+      "slug": "glassfy_loglevel",
+      "members": [
+        {
+          "name": "OFF",
+          "value": "0",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "ERROR",
+          "value": "1",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "DEBUG",
+          "value": "2",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "INFO",
+          "value": "3",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "ALL",
+          "value": "3",
+          "tags": [],
+          "docs": ""
+        }
+      ]
+    },
+    {
+      "name": "GLASSFY_ELEGIBILITY",
+      "slug": "glassfy_elegibility",
+      "members": [
+        {
+          "name": "ELEGIBLE",
+          "value": "1",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "NON_ELEGIBLE",
+          "value": "-1",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "UNKNOWN",
+          "value": "0",
+          "tags": [],
+          "docs": ""
+        }
+      ]
+    },
+    {
+      "name": "GLASSFY_EVENT_TYPE",
+      "slug": "glassfy_event_type",
+      "members": [
+        {
+          "name": "InitialBuy",
+          "value": "5001",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "Restarted",
+          "value": "5002",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "Renewed",
+          "value": "5003",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "Expired",
+          "value": "5004",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "DidChangeRenewalStatus",
+          "value": "5005",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "IsInBillingRetryPeriod",
+          "value": "5006",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "ProductChange",
+          "value": "5007",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "InAppPurchase",
+          "value": "5008",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "Refund",
+          "value": "5009",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "Paused",
+          "value": "5010",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "Resumed",
+          "value": "5011",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "ConnectLicense",
+          "value": "5012",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "DisconnectLicense",
+          "value": "5013",
+          "tags": [],
+          "docs": ""
+        }
+      ]
+    },
+    {
+      "name": "GLASSFY_STORE",
+      "slug": "glassfy_store",
+      "members": [
+        {
+          "name": "AppStore",
+          "value": "1",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "PlayStore",
+          "value": "2",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "Paddle",
+          "value": "3",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "Stripe",
+          "value": "4",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "Glassfy",
+          "value": "5",
+          "tags": [],
+          "docs": ""
+        }
+      ]
+    },
+    {
+      "name": "GLASSFY_ENTITLEMENT",
+      "slug": "glassfy_entitlement",
+      "members": [
+        {
+          "name": "NEVERBUY",
+          "value": "-9",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "OTHERREFUND",
+          "value": "-8",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "ISSUEREFUND",
+          "value": "-7",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "UPGRADED",
+          "value": "-6",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "EXPIREDVOLUNTARY",
+          "value": "-5",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "PRODUCTNOTAVAILABLE",
+          "value": "-4",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "FAILTOACCEPTINCREASE",
+          "value": "-3",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "EXPIREDFROMBILLING",
+          "value": "-2",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "INRETRY",
+          "value": "-1",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "MISSINGINFO",
+          "value": "0",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "EXPIREDINGRACE",
+          "value": "1",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "OFFPLATFORM",
+          "value": "2",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "NONRENEWING",
+          "value": "3",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "AUTORENEWOFF",
+          "value": "4",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "AUTORENEWON",
+          "value": "5",
+          "tags": [],
+          "docs": ""
+        }
+      ]
+    },
+    {
+      "name": "GLASSFY_REPLACEMENT_MODE",
+      "slug": "glassfy_replacement_mode",
+      "members": [
+        {
+          "name": "UNKNOWN_REPLACEMENT_MODE",
+          "value": "0",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "WITH_TIME_PRORATION",
+          "value": "1",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "CHARGE_PRORATED_PRICE",
+          "value": "2",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "WITHOUT_PRORATION",
+          "value": "3",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "CHARGE_FULL_PRICE",
+          "value": "5",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "DEFERRED",
+          "value": "6",
+          "tags": [],
+          "docs": ""
+        }
+      ]
+    },
+    {
+      "name": "GLASSFY_ATTRIBUTION",
+      "slug": "glassfy_attribution",
+      "members": [
+        {
+          "name": "AdjustID",
+          "value": "1",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "AppsFlyerID",
+          "value": "2",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "IP",
+          "value": "3",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "IDFA",
+          "value": "4",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "IDFV",
+          "value": "5",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "GAID",
+          "value": "6",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "ASID",
+          "value": "7",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "AID",
+          "value": "8",
+          "tags": [],
+          "docs": ""
+        }
+      ]
+    }
+  ],
+  "typeAliases": [
+    {
+      "name": "GlassfyExtraProperty",
+      "slug": "glassfyextraproperty",
+      "docs": "",
+      "types": [
+        {
+          "text": "{ [key: string]: string }",
+          "complexTypes": []
+        }
+      ]
+    },
+    {
+      "name": "Exclude",
+      "slug": "exclude",
+      "docs": "Exclude from T those types that are assignable to U",
+      "types": [
+        {
+          "text": "T extends U ? never : T",
+          "complexTypes": [
+            "T",
+            "U"
+          ]
+        }
+      ]
+    }
+  ],
+  "pluginConfigs": []
+}
